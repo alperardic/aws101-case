@@ -37,11 +37,11 @@ in case confliction. After all these I had done one more change. Opened the http
 
 6. I gave permissions to the Apache server by using these commands
 
-     -sudo chown -R apache /var/www
-     -sudo chgrp -R apache /var/www
-     -sudo chmod 2775 /var/www
-     -find /var/www -type d -exec sudo chmod 2775 {} \;
-     -find /var/www -type f -exec sudo chmod 0664 {} \;
+     >sudo chown -R apache /var/www
+     >sudo chgrp -R apache /var/www
+     >sudo chmod 2775 /var/www
+     >find /var/www -type d -exec sudo chmod 2775 {} \;
+     >find /var/www -type f -exec sudo chmod 0664 {} \;
 
 7. After restarting my Apache server (systemctl restart httpd) I can access my WordPress site as mentioned on top.
 
