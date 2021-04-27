@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo yum update -y
+sudo yum install -y httpd httpd-tools mod_ssl 
+sudo systemctl enable httpd 
+sudo systemctl start httpd 
+sudo yum install php-cli php-pdo php-fpm php-json php-mysqlnd
+sudo cd /var/www/html
+sudo wget https://wordpress.org/latest.tar.gz
+sudo tar -xzf latest.tar.gz
