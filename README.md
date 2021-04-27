@@ -22,7 +22,8 @@ Final project appearance;
 doing this step, I followed this path: Security Group > EC2 Security Group - Inbound (consider Inbound option) > Edit inbound rules > Select running instance.
 This path provide us that our instance will be able to access database itself.
 
-![case8](https://user-images.githubusercontent.com/77046207/116318897-3503d300-a7be-11eb-8830-bfc018718720.png)
+![case8](https://user-images.githubusercontent.com/77046207/116325347-9c278480-a7ca-11eb-9a03-2565f4b736bf.png)
+
 
 4. Open virtual machine and check unless user data commands work. After that go into MySQL section to introduce your RDS database to your machine. In this section
 I followed some queries like "CREATE USER, CREATE DATABASE, GRANT ALL PRIVILEGES ON, FLUSH PRIVILEGES". In the next step we are going to edit wp-config.php file. This wp files comes from installation of WordPress which occured at launching of instance. WordPress site can not be established without database.
